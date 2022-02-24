@@ -1,1 +1,1 @@
-rootProject.name = "uno-backend"
+rootProject.name = "board-games-backend"

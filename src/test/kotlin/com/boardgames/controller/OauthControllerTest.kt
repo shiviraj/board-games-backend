@@ -1,9 +1,9 @@
 package com.boardgames.controller
 
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.service.OauthService
-import com.boardgames.uno.service.SecretKeys
-import com.boardgames.uno.testUtils.assertNextWith
+import com.boardgames.domain.Secret
+import com.boardgames.service.OauthService
+import com.boardgames.service.SecretKeys
+import com.boardgames.testUtils.assertNextWith
 import io.kotest.matchers.shouldBe
 import io.mockk.clearAllMocks
 import io.mockk.every

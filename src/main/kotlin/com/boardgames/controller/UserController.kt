@@ -1,13 +1,13 @@
 package com.boardgames.controller
 
-import com.boardgames.uno.controller.view.AuthorView
-import com.boardgames.uno.controller.view.UserView
-import com.boardgames.uno.domain.Role
-import com.boardgames.uno.domain.User
-import com.boardgames.uno.domain.UserId
-import com.boardgames.uno.security.authorization.Authorization
-import com.boardgames.uno.service.TokenService
-import com.boardgames.uno.service.UserService
+import com.boardgames.controller.view.AuthorView
+import com.boardgames.controller.view.UserView
+import com.boardgames.domain.Role
+import com.boardgames.domain.User
+import com.boardgames.domain.UserId
+import com.boardgames.security.authorization.Authorization
+import com.boardgames.service.TokenService
+import com.boardgames.service.UserService
 import org.springframework.http.HttpHeaders
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

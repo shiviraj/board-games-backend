@@ -1,11 +1,10 @@
 package com.boardgames.controller
 
-import com.boardgames.uno.controller.view.AuthenticationResponse
-import com.boardgames.uno.controller.view.AuthorView
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.repository.SecretRepository
-import com.boardgames.uno.security.crypto.Crypto
-import com.boardgames.uno.service.SecretKeys
+import com.boardgames.controller.view.AuthenticationResponse
+import com.boardgames.domain.Secret
+import com.boardgames.repository.SecretRepository
+import com.boardgames.security.crypto.Crypto
+import com.boardgames.service.SecretKeys
 import io.kotest.matchers.shouldBe
 import io.mockk.clearAllMocks
 import org.junit.jupiter.api.AfterEach

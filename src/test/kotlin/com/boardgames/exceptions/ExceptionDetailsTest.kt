@@ -1,8 +1,8 @@
 package com.boardgames.exceptions
 
-import com.boardgames.uno.exceptions.exceptions.ErrorResponse
-import com.boardgames.uno.exceptions.exceptions.ExceptionDetails
-import com.boardgames.uno.exceptions.exceptions.toBaseException
+import com.boardgames.exceptions.exceptions.ErrorResponse
+import com.boardgames.exceptions.exceptions.ExceptionDetails
+import com.boardgames.exceptions.exceptions.toBaseException
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 

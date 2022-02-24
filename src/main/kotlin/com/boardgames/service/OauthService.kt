@@ -1,10 +1,10 @@
 package com.boardgames.service
 
-import com.boardgames.uno.controller.CodeRequest
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.domain.Token
-import com.boardgames.uno.domain.User
-import com.boardgames.uno.gateway.GithubGateway
+import com.boardgames.controller.CodeRequest
+import com.boardgames.domain.Secret
+import com.boardgames.domain.Token
+import com.boardgames.domain.User
+import com.boardgames.gateway.GithubGateway
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
 

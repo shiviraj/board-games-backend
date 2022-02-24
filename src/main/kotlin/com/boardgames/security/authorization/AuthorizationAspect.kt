@@ -1,8 +1,8 @@
 package com.boardgames.security.authorization
 
-import com.boardgames.uno.domain.User
-import com.boardgames.uno.exceptions.error_code.BlogError
-import com.boardgames.uno.exceptions.exceptions.UnauthorizedException
+import com.boardgames.domain.User
+import com.boardgames.exceptions.error_code.BlogError
+import com.boardgames.exceptions.exceptions.UnauthorizedException
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect

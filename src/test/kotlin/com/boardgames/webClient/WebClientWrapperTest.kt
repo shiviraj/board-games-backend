@@ -1,7 +1,7 @@
 package com.boardgames.webClient
 
-import com.boardgames.uno.testUtils.assertErrorWith
-import com.boardgames.uno.testUtils.assertNextWith
+import com.boardgames.testUtils.assertErrorWith
+import com.boardgames.testUtils.assertNextWith
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.kotest.extensions.system.captureStandardOut

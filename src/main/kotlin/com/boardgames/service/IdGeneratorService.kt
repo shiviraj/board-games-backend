@@ -1,7 +1,7 @@
 package com.boardgames.service
 
-import com.boardgames.uno.domain.ID_SEQUENCE_COLLECTION
-import com.boardgames.uno.domain.IdSequence
+import com.boardgames.domain.ID_SEQUENCE_COLLECTION
+import com.boardgames.domain.IdSequence
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.mongodb.core.FindAndModifyOptions
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate

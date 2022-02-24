@@ -1,15 +1,15 @@
 package com.boardgames.gateway
 
-import com.boardgames.uno.config.GithubConfig
-import com.boardgames.uno.domain.AccessTokenResponse
-import com.boardgames.uno.domain.GithubUser
-import com.boardgames.uno.domain.GithubUserEmail
-import com.boardgames.uno.exceptions.error_code.BlogError
-import com.boardgames.uno.exceptions.exceptions.DataNotFound
-import com.boardgames.uno.service.SecretService
-import com.boardgames.uno.service.logOnError
-import com.boardgames.uno.service.logOnSuccess
-import com.boardgames.uno.webClient.WebClientWrapper
+import com.boardgames.config.GithubConfig
+import com.boardgames.domain.AccessTokenResponse
+import com.boardgames.domain.GithubUser
+import com.boardgames.domain.GithubUserEmail
+import com.boardgames.exceptions.error_code.BlogError
+import com.boardgames.exceptions.exceptions.DataNotFound
+import com.boardgames.service.SecretService
+import com.boardgames.service.logOnError
+import com.boardgames.service.logOnSuccess
+import com.boardgames.webClient.WebClientWrapper
 import org.springframework.http.HttpHeaders
 import org.springframework.stereotype.Service
 import org.springframework.util.LinkedMultiValueMap

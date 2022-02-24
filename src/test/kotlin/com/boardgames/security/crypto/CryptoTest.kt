@@ -1,6 +1,6 @@
 package com.boardgames.security.crypto
 
-import com.boardgames.uno.config.CryptoConfig
+import com.boardgames.config.CryptoConfig
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 

@@ -9,7 +9,7 @@ import org.springframework.http.MediaType
 import org.springframework.web.reactive.function.client.WebClient
 
 @Configuration
-@ComponentScan("com.boardgames.uno.webClient")
+@ComponentScan("com.boardgames.webClient")
 class WebClientConfiguration {
 
     @Bean

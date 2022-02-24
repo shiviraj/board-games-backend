@@ -1,8 +1,8 @@
 package com.boardgames.controller.view
 
-import com.boardgames.uno.domain.Author
-import com.boardgames.uno.domain.Role
-import com.boardgames.uno.domain.User
+import com.boardgames.domain.Author
+import com.boardgames.domain.Role
+import com.boardgames.domain.User
 import java.time.LocalDateTime
 
 data class UserView(

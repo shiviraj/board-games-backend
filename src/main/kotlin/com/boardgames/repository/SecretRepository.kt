@@ -1,7 +1,7 @@
 package com.boardgames.repository
 
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.service.SecretKeys
+import com.boardgames.domain.Secret
+import com.boardgames.service.SecretKeys
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import org.springframework.stereotype.Repository
 import reactor.core.publisher.Mono

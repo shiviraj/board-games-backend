@@ -1,7 +1,7 @@
 package com.boardgames.security.crypto
 
-import com.boardgames.uno.config.CryptoConfig
-import com.boardgames.uno.service.Logger
+import com.boardgames.config.CryptoConfig
+import com.boardgames.service.Logger
 import org.bouncycastle.jce.provider.BouncyCastleProvider
 import org.bouncycastle.util.encoders.Base64
 import org.springframework.stereotype.Component

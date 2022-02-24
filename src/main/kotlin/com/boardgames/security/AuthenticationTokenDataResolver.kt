@@ -1,7 +1,7 @@
 package com.boardgames.security
 
-import com.boardgames.uno.domain.User
-import com.boardgames.uno.exceptions.AuthenticationDataException
+import com.boardgames.domain.User
+import com.boardgames.exceptions.AuthenticationDataException
 import org.springframework.core.MethodParameter
 import org.springframework.stereotype.Component
 import org.springframework.web.bind.support.WebDataBinderFactory

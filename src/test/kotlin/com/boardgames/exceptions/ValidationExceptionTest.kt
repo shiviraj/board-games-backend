@@ -1,9 +1,9 @@
 package com.boardgames.exceptions
 
-import com.boardgames.uno.exceptions.exceptions.ErrorResponse
-import com.boardgames.uno.exceptions.exceptions.ServiceError
-import com.boardgames.uno.exceptions.exceptions.ValidationErrorDetails
-import com.boardgames.uno.exceptions.exceptions.ValidationException
+import com.boardgames.exceptions.exceptions.ErrorResponse
+import com.boardgames.exceptions.exceptions.ServiceError
+import com.boardgames.exceptions.exceptions.ValidationErrorDetails
+import com.boardgames.exceptions.exceptions.ValidationException
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 

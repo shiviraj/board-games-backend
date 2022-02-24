@@ -1,8 +1,8 @@
 package com.boardgames.service
 
-import com.boardgames.uno.domain.*
-import com.boardgames.uno.gateway.GithubGateway
-import com.boardgames.uno.repository.UserRepository
+import com.boardgames.domain.*
+import com.boardgames.gateway.GithubGateway
+import com.boardgames.repository.UserRepository
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
 

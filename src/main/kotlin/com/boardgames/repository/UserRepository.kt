@@ -1,6 +1,6 @@
 package com.boardgames.repository
 
-import com.boardgames.uno.domain.User
+import com.boardgames.domain.User
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import org.springframework.stereotype.Repository
 import reactor.core.publisher.Mono

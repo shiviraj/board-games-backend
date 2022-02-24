@@ -1,9 +1,9 @@
 package com.boardgames.controller
 
-import com.boardgames.uno.controller.view.AuthenticationResponse
-import com.boardgames.uno.controller.view.AuthorView
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.service.OauthService
+import com.boardgames.controller.view.AuthenticationResponse
+import com.boardgames.controller.view.AuthorView
+import com.boardgames.domain.Secret
+import com.boardgames.service.OauthService
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Mono
 

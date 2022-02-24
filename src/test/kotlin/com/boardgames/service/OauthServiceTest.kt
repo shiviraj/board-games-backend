@@ -1,9 +1,9 @@
 package com.boardgames.service
 
-import com.boardgames.uno.controller.CodeRequest
-import com.boardgames.uno.domain.*
-import com.boardgames.uno.gateway.GithubGateway
-import com.boardgames.uno.testUtils.assertNextWith
+import com.boardgames.controller.CodeRequest
+import com.boardgames.domain.*
+import com.boardgames.gateway.GithubGateway
+import com.boardgames.testUtils.assertNextWith
 import io.kotest.matchers.shouldBe
 import io.mockk.clearAllMocks
 import io.mockk.every

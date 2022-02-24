@@ -1,10 +1,10 @@
 package com.boardgames.service
 
-import com.boardgames.uno.domain.Secret
-import com.boardgames.uno.exceptions.error_code.BlogError
-import com.boardgames.uno.exceptions.exceptions.DataNotFound
-import com.boardgames.uno.repository.SecretRepository
-import com.boardgames.uno.security.crypto.Crypto
+import com.boardgames.domain.Secret
+import com.boardgames.exceptions.error_code.BlogError
+import com.boardgames.exceptions.exceptions.DataNotFound
+import com.boardgames.repository.SecretRepository
+import com.boardgames.security.crypto.Crypto
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
 

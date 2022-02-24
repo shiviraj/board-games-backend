@@ -1,6 +1,6 @@
 package com.boardgames.exceptions
 
-import com.boardgames.uno.exceptions.exceptions.*
+import com.boardgames.exceptions.exceptions.*
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler

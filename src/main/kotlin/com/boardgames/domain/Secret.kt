@@ -1,6 +1,6 @@
 package com.boardgames.domain
 
-import com.boardgames.uno.service.SecretKeys
+import com.boardgames.service.SecretKeys
 import org.springframework.data.mongodb.core.index.Indexed
 import org.springframework.data.mongodb.core.mapping.Document
 

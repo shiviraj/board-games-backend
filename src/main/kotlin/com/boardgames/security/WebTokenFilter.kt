@@ -1,7 +1,7 @@
 package com.boardgames.security
 
-import com.boardgames.uno.service.Logger
-import com.boardgames.uno.service.UserService
+import com.boardgames.service.Logger
+import com.boardgames.service.UserService
 import org.springframework.http.HttpHeaders
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder

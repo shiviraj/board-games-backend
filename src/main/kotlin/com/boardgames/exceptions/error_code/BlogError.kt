@@ -1,6 +1,6 @@
 package com.boardgames.exceptions.error_code
 
-import com.boardgames.uno.exceptions.exceptions.ServiceError
+import com.boardgames.exceptions.exceptions.ServiceError
 
 
 enum class BlogError(override val errorCode: String, override val message: String) : ServiceError {

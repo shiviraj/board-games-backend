@@ -1,9 +1,9 @@
 package com.boardgames.service
 
-import com.boardgames.uno.domain.Token
-import com.boardgames.uno.domain.User
-import com.boardgames.uno.repository.TokenRepository
-import com.boardgames.uno.security.crypto.Crypto
+import com.boardgames.domain.Token
+import com.boardgames.domain.User
+import com.boardgames.repository.TokenRepository
+import com.boardgames.security.crypto.Crypto
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.stereotype.Service

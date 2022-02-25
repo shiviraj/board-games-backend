@@ -47,18 +47,12 @@ class UserService(
             .logOnError("Failed to register a new user", mapOf("user" to user.username))
     }
 
-    fun getUserByUserId(userId: String): Mono<User> {
-        return userRepository.findByUserId(userId)
-            .logOnSuccess("Successfully fetched user from db", mapOf("user" to userId))
-            .logOnError("Failed to fetch user from db", mapOf("user" to userId))
-    }
-
     private fun save(user: User) = userRepository.save(user)
     fun extractUser(token: String): Mono<User> {
         return tokenService.extractToken(token)
             .flatMap {
                 if (it.userType.isDummy()) {
-                    Mono.just(User.createDummy(it.userId))
+                    Mono.just(User.createDummy(it.userId, it.name))
                 } else {
                     userRepository.findByUserId(it.userId)
                 }
@@ -66,11 +60,10 @@ class UserService(
             .logOnError("Failed to fetch user from token")
     }
 
-    fun getDummyUser(): Mono<Token> {
+    fun createDummyUser(name: String): Mono<Pair<Token, User>> {
         return idGeneratorService.generateId(IdType.DummyUserId).flatMap { userId ->
-            tokenService.generateToken(User.createDummy(userId))
+            val user = User.createDummy(userId, name)
+            tokenService.generateToken(user).map { Pair(it, user) }
         }
     }
 }
-
-typealias AuthorService = UserService

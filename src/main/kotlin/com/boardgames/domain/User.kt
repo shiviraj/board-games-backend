@@ -6,6 +6,7 @@ import org.springframework.data.annotation.TypeAlias
 import org.springframework.data.mongodb.core.index.Indexed
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
+import java.util.*
 
 const val USER_COLLECTION = "users"
 
@@ -28,10 +29,10 @@ data class User(
     val username: String,
 ) {
     companion object {
-        fun createDummy(userId: UserId): User {
+        fun createDummy(userId: UserId, name: String): User {
             return User(
                 uniqueId = "unique",
-                name = "Dummy",
+                name = name,
                 userId = userId,
                 email = "email",
                 emailVerified = false,
@@ -39,7 +40,7 @@ data class User(
                 location = null,
                 source = LoginSource.DUMMY,
                 role = Role.DUMMY,
-                username = "dummy"
+                username = name.lowercase(Locale.getDefault())
             )
         }
     }
@@ -47,11 +48,7 @@ data class User(
 
 enum class Role(private val sequenceId: Int) {
     DUMMY(0),
-    USER(1),
-    ADMIN(2),
-    OWNER(3);
-
-    fun isJunior(allowedRole: Role) = this.sequenceId < allowedRole.sequenceId
+    USER(1)
 }
 
 enum class LoginSource {
@@ -59,6 +56,4 @@ enum class LoginSource {
     GITHUB
 }
 
-typealias Author = User
-typealias AuthorId = String
 typealias UserId = String

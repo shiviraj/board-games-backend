@@ -1,7 +1,7 @@
 package com.boardgames.controller
 
 import com.boardgames.controller.view.AuthenticationResponse
-import com.boardgames.controller.view.AuthorView
+import com.boardgames.controller.view.UserView
 import com.boardgames.domain.Secret
 import com.boardgames.service.OauthService
 import org.springframework.web.bind.annotation.*
@@ -22,7 +22,7 @@ class OauthController(
     fun signIn(@RequestBody code: CodeRequest): Mono<AuthenticationResponse> {
         return oauthService.signIn(code)
             .map {
-                AuthenticationResponse(it.first.getValue(), AuthorView.from(it.second))
+                AuthenticationResponse(it.first.getValue(), UserView.from(it.second))
             }
     }
 }

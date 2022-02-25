@@ -17,6 +17,7 @@ data class Token(
     @Indexed(name = "sessionExpiryIndex", expireAfterSeconds = 604800)
     val createdAt: LocalDateTime = LocalDateTime.now(),
     val userId: String,
+    val name: String,
     val userType: UserType,
     private var value: String,
 ) {
@@ -25,6 +26,7 @@ data class Token(
             return Token(
                 userId = user.userId,
                 value = "",
+                name = user.name,
                 userType = if (user.role == Role.DUMMY) UserType.DUMMY else UserType.USER
             )
         }

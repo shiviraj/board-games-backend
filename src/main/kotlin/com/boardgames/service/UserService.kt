@@ -1,5 +1,6 @@
 package com.boardgames.service
 
+import com.boardgames.controller.UserRequest
 import com.boardgames.domain.*
 import com.boardgames.gateway.GithubGateway
 import com.boardgames.repository.UserRepository
@@ -60,9 +61,13 @@ class UserService(
             .logOnError("Failed to fetch user from token")
     }
 
-    fun createDummyUser(name: String): Mono<Pair<Token, User>> {
-        return idGeneratorService.generateId(IdType.DummyUserId).flatMap { userId ->
-            val user = User.createDummy(userId, name)
+    fun createDummyUser(userRequest: UserRequest): Mono<Pair<Token, User>> {
+        return if (userRequest.userId.isNullOrBlank()) {
+            idGeneratorService.generateId(IdType.DummyUserId)
+        } else {
+            Mono.just(userRequest.userId)
+        }.flatMap { userId ->
+            val user = User.createDummy(userId, userRequest.name)
             tokenService.generateToken(user).map { Pair(it, user) }
         }
     }

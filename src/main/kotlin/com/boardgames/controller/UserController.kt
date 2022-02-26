@@ -18,10 +18,12 @@ class UserController(
     }
 
     @PostMapping
-    fun createUser(@RequestParam name: String): Mono<AuthenticationResponse> {
-        return userService.createDummyUser(name).map {
+    fun createUser(@RequestBody userRequest: UserRequest): Mono<AuthenticationResponse> {
+        return userService.createDummyUser(userRequest).map {
             AuthenticationResponse.from(it.first, it.second)
         }
     }
 }
+
+data class UserRequest(val name: String, val userId: String?)
 
